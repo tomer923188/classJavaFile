@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class TestCar {
+	
+	public static void carWithLeastKm() {
+		for (int i=0; i<cars.length-1; i++) {
+			if (soldiers[i].getHeight() < soldiers[i+1].getHeight() && soldiers[i-1].getHeight() < soldiers[i].getHeight() ) {
+				System.out.println(soldiers[i]+" stays tonight");
+			}
+	}
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		Car [] cars = new Car[30];
+		double km = 0;
+		String type = "";
+		String color = "";
+		for (int i=0; i<30; i++) {
+			System.out.print("Enter the car type: ");
+			type = input.next();
+			System.out.print("Enter the car color: ");
+			color = input.next();
+			System.out.print("Enter how many kms have been driven on the car: ");
+			km = input.nextDouble();
+			
+			cars[i] = new Car(type, color, km);
+			
+		input.close();
+	}
+
+	}
+}
