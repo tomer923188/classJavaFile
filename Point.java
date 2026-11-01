@@ -1,3 +1,4 @@
+
 public class Point {
 	private double x,y;
 
@@ -30,5 +31,10 @@ public class Point {
 	public double distance(Point other) {
 		return Math.sqrt(Math.pow(this.y-other.y, 2)+Math.pow(this.x-other.x, 2));
 	}
-	
+	/*
+	 * פעולה המקבלת נקודה ומחזירה אמת אם שתי קורדנטות שוות
+	 */
+	public boolean isEquale(Point o) {
+		return o.x==this.x && o.y==this.y;
+	}
 }

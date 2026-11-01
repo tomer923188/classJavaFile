@@ -11,15 +11,15 @@ public Car(String type, String color, double km) {
 	this.km = km;
 }
 //returns the type of the car
-public String getType(String type) {
+public String getType() {
 	return type;
 }
 //returns the color of the car
-public String getColor(String color) {
+public String getColor() {
 	return color;
 }
 //returns how many km are on the car
-public double getKm(double km) {
+public double getKm() {
 	return km;
 }
 //sets a new type
@@ -36,8 +36,6 @@ public void setKm(double km) {
 }
 //describes the car
 public String toString() {
-	System.out.println("The car's type is: "+this.type);
-	System.out.println("The car's color is: "+this.color);
-	System.out.println("The car has "+this.km+" kilometers");
+	return "The car has: "+this.km+"The color's is: "+this.color+"The type is: "+this.type;
 }
 }
